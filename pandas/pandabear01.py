@@ -48,6 +48,7 @@ def main():
     print(sorted_by_gross.head(10))
 
     # create a stacked bar graph
+    # use drop_duplicates method to remove dups
     sorted_by_gross['Gross Earnings'].head(10).plot(kind="barh")
     # save the figure as stackedbar.png
     plt.savefig("/home/student/static/stackedbar.png")
